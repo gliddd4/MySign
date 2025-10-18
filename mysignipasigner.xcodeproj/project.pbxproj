@@ -1,0 +1,1102 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		770B7D7E2E40FD5A00E0C453 /* Information.md in Resources */ = {isa = PBXBuildFile; fileRef = 770B7D7D2E40FD5A00E0C453 /* Information.md */; };
+		7779ADEE2D9B89DB00A16C99 /* BlurView in Frameworks */ = {isa = PBXBuildFile; productRef = 7779ADED2D9B89DB00A16C99 /* BlurView */; };
+		77BBED3D2DF8878700331B3B /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 77BBED3C2DF8878700331B3B /* Nuke */; };
+		77BBED3F2DF8879000331B3B /* WelcomeSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 77BBED3E2DF8879000331B3B /* WelcomeSheet */; };
+		77BBED412DF8879500331B3B /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 77BBED402DF8879500331B3B /* OpenSSL */; };
+		77BBED452DF8879D00331B3B /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 77BBED442DF8879D00331B3B /* Swifter */; };
+		77BBED472DF887A200331B3B /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = 77BBED462DF887A200331B3B /* Zip */; };
+		77BBED492DF887A400331B3B /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 77BBED482DF887A400331B3B /* ZIPFoundation */; };
+		77BBF0A72DF8908100331B3B /* signervip.patch in Resources */ = {isa = PBXBuildFile; fileRef = 77BBF0A12DF8908100331B3B /* signervip.patch */; };
+		77BBF0A82DF8908100331B3B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 77BBF09B2DF8908100331B3B /* LICENSE */; };
+		77BBF0A92DF8908100331B3B /* xmake.lua in Resources */ = {isa = PBXBuildFile; fileRef = 77BBF0A42DF8908100331B3B /* xmake.lua */; };
+		77BBF0AA2DF8908100331B3B /* INSTALL.sh in Resources */ = {isa = PBXBuildFile; fileRef = 77BBF09A2DF8908100331B3B /* INSTALL.sh */; };
+		77BBF0AC2DF8908100331B3B /* Dockerfile in Resources */ = {isa = PBXBuildFile; fileRef = 77BBF0992DF8908100331B3B /* Dockerfile */; };
+		77BBF0AD2DF8908100331B3B /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77BBF0982DF8908100331B3B /* CMakeLists.txt */; };
+		77BBF0AE2DF8908100331B3B /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF08F2DF8908100331B3B /* common.cpp */; };
+		77BBF0AF2DF8908100331B3B /* macho.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF09D2DF8908100331B3B /* macho.cpp */; };
+		77BBF0B02DF8908100331B3B /* archo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0952DF8908100331B3B /* archo.cpp */; };
+		77BBF0B12DF8908100331B3B /* openssl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF09F2DF8908100331B3B /* openssl.cpp */; };
+		77BBF0B32DF8908100331B3B /* signing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0A32DF8908100331B3B /* signing.cpp */; };
+		77BBF0B42DF8908100331B3B /* json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0912DF8908100331B3B /* json.cpp */; };
+		77BBF0B52DF8908100331B3B /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF08D2DF8908100331B3B /* base64.cpp */; };
+		77BBF0B62DF8908100331B3B /* bundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0972DF8908100331B3B /* bundle.cpp */; };
+		77BBF0B92DF8932200331B3B /* zsign_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77BBF0B82DF8932200331B3B /* zsign_wrapper.cpp */; };
+		77BCAD692D9894A00011B808 /* HapticEase in Frameworks */ = {isa = PBXBuildFile; productRef = 77BCAD682D9894A00011B808 /* HapticEase */; };
+		77C0C40F2E1D93EF00E12E8E /* BezelKit in Frameworks */ = {isa = PBXBuildFile; productRef = 77C0C40E2E1D93EF00E12E8E /* BezelKit */; };
+		77DB9CEA2DF153B700973808 /* Entitlements.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CC72DF153B700973808 /* Entitlements.c */; };
+		77DB9CEB2DF153B700973808 /* CodeDirectory.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CBE2DF153B700973808 /* CodeDirectory.c */; };
+		77DB9CEC2DF153B700973808 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CE42DF153B700973808 /* Other.swift */; };
+		77DB9CEE2DF153B700973808 /* CSBlob.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CC02DF153B700973808 /* CSBlob.c */; };
+		77DB9CEF2DF153B700973808 /* ZIP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CE62DF153B700973808 /* ZIP.swift */; };
+		77DB9CF02DF153B700973808 /* DyldSharedCache.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CC52DF153B700973808 /* DyldSharedCache.c */; };
+		77DB9CF12DF153B700973808 /* Fat.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CC92DF153B700973808 /* Fat.c */; };
+		77DB9CF22DF153B700973808 /* BufferedStream.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CBB2DF153B700973808 /* BufferedStream.c */; };
+		77DB9CF32DF153B700973808 /* DER.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CC22DF153B700973808 /* DER.c */; };
+		77DB9CF42DF153B700973808 /* MachOLoadCommand.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CD32DF153B700973808 /* MachOLoadCommand.c */; };
+		77DB9CF52DF153B700973808 /* Host.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CCE2DF153B700973808 /* Host.c */; };
+		77DB9CF62DF153B700973808 /* MemoryStream.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CD52DF153B700973808 /* MemoryStream.c */; };
+		77DB9CF72DF153B700973808 /* arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CB72DF153B700973808 /* arm64.c */; };
+		77DB9CF82DF153B700973808 /* PatchFinder_arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CD92DF153B700973808 /* PatchFinder_arm64.c */; };
+		77DB9CFA2DF153B700973808 /* Base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CB92DF153B700973808 /* Base64.c */; };
+		77DB9CFB2DF153B700973808 /* Util.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CDB2DF153B700973808 /* Util.c */; };
+		77DB9CFC2DF153B700973808 /* MachO.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CD02DF153B700973808 /* MachO.c */; };
+		77DB9CFD2DF153B700973808 /* FileStream.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CCB2DF153B700973808 /* FileStream.c */; };
+		77DB9CFE2DF153B700973808 /* Circlefy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CE02DF153B700973808 /* Circlefy.m */; };
+		77DB9CFF2DF153B700973808 /* PatchFinder.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DB9CD72DF153B700973808 /* PatchFinder.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77A48FD22D6D219A00940E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77A48FB82D6D219700940E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A48FBF2D6D219700940E70;
+			remoteInfo = mysignipasigner;
+		};
+		77A48FDC2D6D219A00940E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77A48FB82D6D219700940E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A48FBF2D6D219700940E70;
+			remoteInfo = mysignipasigner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		770B7D7D2E40FD5A00E0C453 /* Information.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Information.md; sourceTree = "<group>"; };
+		778560EB2DADB05A00FCA47D /* libzsign.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzsign.a; sourceTree = "<group>"; };
+		778562822DADB42600FCA47D /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
+		77A48FC02D6D219700940E70 /* mysignipasigner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mysignipasigner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A48FD12D6D219A00940E70 /* mysignipasignerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mysignipasignerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A48FDB2D6D219A00940E70 /* mysignipasignerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mysignipasignerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BBF08C2DF8908100331B3B /* base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		77BBF08D2DF8908100331B3B /* base64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cpp; sourceTree = "<group>"; };
+		77BBF08E2DF8908100331B3B /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		77BBF08F2DF8908100331B3B /* common.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		77BBF0902DF8908100331B3B /* json.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		77BBF0912DF8908100331B3B /* json.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = json.cpp; sourceTree = "<group>"; };
+		77BBF0922DF8908100331B3B /* mach-o.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mach-o.h"; sourceTree = "<group>"; };
+		77BBF0942DF8908100331B3B /* archo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = archo.h; sourceTree = "<group>"; };
+		77BBF0952DF8908100331B3B /* archo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = archo.cpp; sourceTree = "<group>"; };
+		77BBF0962DF8908100331B3B /* bundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bundle.h; sourceTree = "<group>"; };
+		77BBF0972DF8908100331B3B /* bundle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bundle.cpp; sourceTree = "<group>"; };
+		77BBF0982DF8908100331B3B /* CMakeLists.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		77BBF0992DF8908100331B3B /* Dockerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dockerfile; sourceTree = "<group>"; };
+		77BBF09A2DF8908100331B3B /* INSTALL.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = INSTALL.sh; sourceTree = "<group>"; };
+		77BBF09B2DF8908100331B3B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		77BBF09C2DF8908100331B3B /* macho.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = macho.h; sourceTree = "<group>"; };
+		77BBF09D2DF8908100331B3B /* macho.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = macho.cpp; sourceTree = "<group>"; };
+		77BBF09E2DF8908100331B3B /* openssl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = openssl.h; sourceTree = "<group>"; };
+		77BBF09F2DF8908100331B3B /* openssl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = openssl.cpp; sourceTree = "<group>"; };
+		77BBF0A12DF8908100331B3B /* signervip.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = signervip.patch; sourceTree = "<group>"; };
+		77BBF0A22DF8908100331B3B /* signing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = signing.h; sourceTree = "<group>"; };
+		77BBF0A32DF8908100331B3B /* signing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = signing.cpp; sourceTree = "<group>"; };
+		77BBF0A42DF8908100331B3B /* xmake.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = xmake.lua; sourceTree = "<group>"; };
+		77BBF0B82DF8932200331B3B /* zsign_wrapper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = zsign_wrapper.cpp; sourceTree = "<group>"; };
+		77DB9CB62DF153B700973808 /* arm64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = arm64.h; sourceTree = "<group>"; };
+		77DB9CB72DF153B700973808 /* arm64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = arm64.c; sourceTree = "<group>"; };
+		77DB9CB82DF153B700973808 /* Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		77DB9CB92DF153B700973808 /* Base64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Base64.c; sourceTree = "<group>"; };
+		77DB9CBA2DF153B700973808 /* BufferedStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BufferedStream.h; sourceTree = "<group>"; };
+		77DB9CBB2DF153B700973808 /* BufferedStream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BufferedStream.c; sourceTree = "<group>"; };
+		77DB9CBC2DF153B700973808 /* CachePatching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CachePatching.h; sourceTree = "<group>"; };
+		77DB9CBD2DF153B700973808 /* CodeDirectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeDirectory.h; sourceTree = "<group>"; };
+		77DB9CBE2DF153B700973808 /* CodeDirectory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CodeDirectory.c; sourceTree = "<group>"; };
+		77DB9CBF2DF153B700973808 /* CSBlob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSBlob.h; sourceTree = "<group>"; };
+		77DB9CC02DF153B700973808 /* CSBlob.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CSBlob.c; sourceTree = "<group>"; };
+		77DB9CC12DF153B700973808 /* DER.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DER.h; sourceTree = "<group>"; };
+		77DB9CC22DF153B700973808 /* DER.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DER.c; sourceTree = "<group>"; };
+		77DB9CC32DF153B700973808 /* dyld_cache_format.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dyld_cache_format.h; sourceTree = "<group>"; };
+		77DB9CC42DF153B700973808 /* DyldSharedCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyldSharedCache.h; sourceTree = "<group>"; };
+		77DB9CC52DF153B700973808 /* DyldSharedCache.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DyldSharedCache.c; sourceTree = "<group>"; };
+		77DB9CC62DF153B700973808 /* Entitlements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entitlements.h; sourceTree = "<group>"; };
+		77DB9CC72DF153B700973808 /* Entitlements.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Entitlements.c; sourceTree = "<group>"; };
+		77DB9CC82DF153B700973808 /* Fat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fat.h; sourceTree = "<group>"; };
+		77DB9CC92DF153B700973808 /* Fat.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Fat.c; sourceTree = "<group>"; };
+		77DB9CCA2DF153B700973808 /* FileStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileStream.h; sourceTree = "<group>"; };
+		77DB9CCB2DF153B700973808 /* FileStream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FileStream.c; sourceTree = "<group>"; };
+		77DB9CCC2DF153B700973808 /* fixup-chains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fixup-chains.h"; sourceTree = "<group>"; };
+		77DB9CCD2DF153B700973808 /* Host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Host.h; sourceTree = "<group>"; };
+		77DB9CCE2DF153B700973808 /* Host.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Host.c; sourceTree = "<group>"; };
+		77DB9CCF2DF153B700973808 /* MachO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachO.h; sourceTree = "<group>"; };
+		77DB9CD02DF153B700973808 /* MachO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MachO.c; sourceTree = "<group>"; };
+		77DB9CD12DF153B700973808 /* MachOByteOrder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOByteOrder.h; sourceTree = "<group>"; };
+		77DB9CD22DF153B700973808 /* MachOLoadCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachOLoadCommand.h; sourceTree = "<group>"; };
+		77DB9CD32DF153B700973808 /* MachOLoadCommand.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MachOLoadCommand.c; sourceTree = "<group>"; };
+		77DB9CD42DF153B700973808 /* MemoryStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryStream.h; sourceTree = "<group>"; };
+		77DB9CD52DF153B700973808 /* MemoryStream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MemoryStream.c; sourceTree = "<group>"; };
+		77DB9CD62DF153B700973808 /* PatchFinder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatchFinder.h; sourceTree = "<group>"; };
+		77DB9CD72DF153B700973808 /* PatchFinder.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PatchFinder.c; sourceTree = "<group>"; };
+		77DB9CD82DF153B700973808 /* PatchFinder_arm64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatchFinder_arm64.h; sourceTree = "<group>"; };
+		77DB9CD92DF153B700973808 /* PatchFinder_arm64.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = PatchFinder_arm64.c; sourceTree = "<group>"; };
+		77DB9CDA2DF153B700973808 /* Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		77DB9CDB2DF153B700973808 /* Util.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Util.c; sourceTree = "<group>"; };
+		77DB9CE02DF153B700973808 /* Circlefy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circlefy.m; sourceTree = "<group>"; };
+		77DB9CE12DF153B700973808 /* Circlefy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Circlefy-Bridging-Header.h"; sourceTree = "<group>"; };
+		77DB9CE42DF153B700973808 /* Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		77DB9CE52DF153B700973808 /* placeholderMachOBytes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = placeholderMachOBytes.h; sourceTree = "<group>"; };
+		77DB9CE62DF153B700973808 /* ZIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIP.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		77B45A3F2D94E6A100BD0F8C /* Exceptions for "mysignipasigner" folder in "mysignipasigner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 77A48FBF2D6D219700940E70 /* mysignipasigner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7785611F2DADB06800FCA47D /* Headers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		7785619E2DADB19C00FCA47D /* Substrates */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Substrates;
+			sourceTree = "<group>";
+		};
+		77A48FC22D6D219700940E70 /* mysignipasigner */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				77B45A3F2D94E6A100BD0F8C /* Exceptions for "mysignipasigner" folder in "mysignipasigner" target */,
+			);
+			path = mysignipasigner;
+			sourceTree = "<group>";
+		};
+		77A48FD42D6D219A00940E70 /* mysignipasignerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mysignipasignerTests;
+			sourceTree = "<group>";
+		};
+		77A48FDE2D6D219A00940E70 /* mysignipasignerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mysignipasignerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		772A81262D76558E0071A1E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77C0C40F2E1D93EF00E12E8E /* BezelKit in Frameworks */,
+				77BBED452DF8879D00331B3B /* Swifter in Frameworks */,
+				77BBED492DF887A400331B3B /* ZIPFoundation in Frameworks */,
+				77BBED412DF8879500331B3B /* OpenSSL in Frameworks */,
+				77BBED472DF887A200331B3B /* Zip in Frameworks */,
+				77BBED3F2DF8879000331B3B /* WelcomeSheet in Frameworks */,
+				7779ADEE2D9B89DB00A16C99 /* BlurView in Frameworks */,
+				77BCAD692D9894A00011B808 /* HapticEase in Frameworks */,
+				77BBED3D2DF8878700331B3B /* Nuke in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A48FCE2D6D219A00940E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A48FD82D6D219A00940E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77A48FB72D6D219700940E70 = {
+			isa = PBXGroup;
+			children = (
+				77BBF0A62DF8908100331B3B /* ArkSigning-main */,
+				77DB9CE72DF153B700973808 /* Circlefy */,
+				77A48FC22D6D219700940E70 /* mysignipasigner */,
+				77A48FD42D6D219A00940E70 /* mysignipasignerTests */,
+				77A48FDE2D6D219A00940E70 /* mysignipasignerUITests */,
+				77A48FC12D6D219700940E70 /* Products */,
+				7785611F2DADB06800FCA47D /* Headers */,
+				778560EB2DADB05A00FCA47D /* libzsign.a */,
+				7785619E2DADB19C00FCA47D /* Substrates */,
+				778562822DADB42600FCA47D /* CydiaSubstrate.framework */,
+				77B43BA02E033D35007E9701 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		77A48FC12D6D219700940E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77A48FC02D6D219700940E70 /* mysignipasigner.app */,
+				77A48FD12D6D219A00940E70 /* mysignipasignerTests.xctest */,
+				77A48FDB2D6D219A00940E70 /* mysignipasignerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77B43BA02E033D35007E9701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77BBF0932DF8908100331B3B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				77BBF08C2DF8908100331B3B /* base64.h */,
+				77BBF08D2DF8908100331B3B /* base64.cpp */,
+				77BBF08E2DF8908100331B3B /* common.h */,
+				77BBF08F2DF8908100331B3B /* common.cpp */,
+				77BBF0902DF8908100331B3B /* json.h */,
+				77BBF0912DF8908100331B3B /* json.cpp */,
+				77BBF0922DF8908100331B3B /* mach-o.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		77BBF0A62DF8908100331B3B /* ArkSigning-main */ = {
+			isa = PBXGroup;
+			children = (
+				770B7D7D2E40FD5A00E0C453 /* Information.md */,
+				77BBF0B82DF8932200331B3B /* zsign_wrapper.cpp */,
+				77BBF0932DF8908100331B3B /* common */,
+				77BBF0942DF8908100331B3B /* archo.h */,
+				77BBF0952DF8908100331B3B /* archo.cpp */,
+				77BBF0962DF8908100331B3B /* bundle.h */,
+				77BBF0972DF8908100331B3B /* bundle.cpp */,
+				77BBF0982DF8908100331B3B /* CMakeLists.txt */,
+				77BBF0992DF8908100331B3B /* Dockerfile */,
+				77BBF09A2DF8908100331B3B /* INSTALL.sh */,
+				77BBF09B2DF8908100331B3B /* LICENSE */,
+				77BBF09C2DF8908100331B3B /* macho.h */,
+				77BBF09D2DF8908100331B3B /* macho.cpp */,
+				77BBF09E2DF8908100331B3B /* openssl.h */,
+				77BBF09F2DF8908100331B3B /* openssl.cpp */,
+				77BBF0A12DF8908100331B3B /* signervip.patch */,
+				77BBF0A22DF8908100331B3B /* signing.h */,
+				77BBF0A32DF8908100331B3B /* signing.cpp */,
+				77BBF0A42DF8908100331B3B /* xmake.lua */,
+			);
+			path = "ArkSigning-main";
+			sourceTree = "<group>";
+		};
+		77DB9CDC2DF153B700973808 /* choma */ = {
+			isa = PBXGroup;
+			children = (
+				77DB9CB62DF153B700973808 /* arm64.h */,
+				77DB9CB72DF153B700973808 /* arm64.c */,
+				77DB9CB82DF153B700973808 /* Base64.h */,
+				77DB9CB92DF153B700973808 /* Base64.c */,
+				77DB9CBA2DF153B700973808 /* BufferedStream.h */,
+				77DB9CBB2DF153B700973808 /* BufferedStream.c */,
+				77DB9CBC2DF153B700973808 /* CachePatching.h */,
+				77DB9CBD2DF153B700973808 /* CodeDirectory.h */,
+				77DB9CBE2DF153B700973808 /* CodeDirectory.c */,
+				77DB9CBF2DF153B700973808 /* CSBlob.h */,
+				77DB9CC02DF153B700973808 /* CSBlob.c */,
+				77DB9CC12DF153B700973808 /* DER.h */,
+				77DB9CC22DF153B700973808 /* DER.c */,
+				77DB9CC32DF153B700973808 /* dyld_cache_format.h */,
+				77DB9CC42DF153B700973808 /* DyldSharedCache.h */,
+				77DB9CC52DF153B700973808 /* DyldSharedCache.c */,
+				77DB9CC62DF153B700973808 /* Entitlements.h */,
+				77DB9CC72DF153B700973808 /* Entitlements.c */,
+				77DB9CC82DF153B700973808 /* Fat.h */,
+				77DB9CC92DF153B700973808 /* Fat.c */,
+				77DB9CCA2DF153B700973808 /* FileStream.h */,
+				77DB9CCB2DF153B700973808 /* FileStream.c */,
+				77DB9CCC2DF153B700973808 /* fixup-chains.h */,
+				77DB9CCD2DF153B700973808 /* Host.h */,
+				77DB9CCE2DF153B700973808 /* Host.c */,
+				77DB9CCF2DF153B700973808 /* MachO.h */,
+				77DB9CD02DF153B700973808 /* MachO.c */,
+				77DB9CD12DF153B700973808 /* MachOByteOrder.h */,
+				77DB9CD22DF153B700973808 /* MachOLoadCommand.h */,
+				77DB9CD32DF153B700973808 /* MachOLoadCommand.c */,
+				77DB9CD42DF153B700973808 /* MemoryStream.h */,
+				77DB9CD52DF153B700973808 /* MemoryStream.c */,
+				77DB9CD62DF153B700973808 /* PatchFinder.h */,
+				77DB9CD72DF153B700973808 /* PatchFinder.c */,
+				77DB9CD82DF153B700973808 /* PatchFinder_arm64.h */,
+				77DB9CD92DF153B700973808 /* PatchFinder_arm64.c */,
+				77DB9CDA2DF153B700973808 /* Util.h */,
+				77DB9CDB2DF153B700973808 /* Util.c */,
+			);
+			path = choma;
+			sourceTree = "<group>";
+		};
+		77DB9CE72DF153B700973808 /* Circlefy */ = {
+			isa = PBXGroup;
+			children = (
+				77DB9CDC2DF153B700973808 /* choma */,
+				77DB9CE02DF153B700973808 /* Circlefy.m */,
+				77DB9CE12DF153B700973808 /* Circlefy-Bridging-Header.h */,
+				77DB9CE42DF153B700973808 /* Other.swift */,
+				77DB9CE52DF153B700973808 /* placeholderMachOBytes.h */,
+				77DB9CE62DF153B700973808 /* ZIP.swift */,
+			);
+			path = Circlefy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77A48FBF2D6D219700940E70 /* mysignipasigner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A48FE52D6D219A00940E70 /* Build configuration list for PBXNativeTarget "mysignipasigner" */;
+			buildPhases = (
+				77A48FBC2D6D219700940E70 /* Sources */,
+				77A48FBE2D6D219700940E70 /* Resources */,
+				772A81262D76558E0071A1E9 /* Frameworks */,
+				77AB91D92D9DC83F003F0A91 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7785611F2DADB06800FCA47D /* Headers */,
+				7785619E2DADB19C00FCA47D /* Substrates */,
+				77A48FC22D6D219700940E70 /* mysignipasigner */,
+			);
+			name = mysignipasigner;
+			packageProductDependencies = (
+				77BCAD682D9894A00011B808 /* HapticEase */,
+				7779ADED2D9B89DB00A16C99 /* BlurView */,
+				77BBED3C2DF8878700331B3B /* Nuke */,
+				77BBED3E2DF8879000331B3B /* WelcomeSheet */,
+				77BBED402DF8879500331B3B /* OpenSSL */,
+				77BBED442DF8879D00331B3B /* Swifter */,
+				77BBED462DF887A200331B3B /* Zip */,
+				77BBED482DF887A400331B3B /* ZIPFoundation */,
+				77C0C40E2E1D93EF00E12E8E /* BezelKit */,
+			);
+			productName = mysignipasigner;
+			productReference = 77A48FC02D6D219700940E70 /* mysignipasigner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		77A48FD02D6D219A00940E70 /* mysignipasignerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A48FE82D6D219A00940E70 /* Build configuration list for PBXNativeTarget "mysignipasignerTests" */;
+			buildPhases = (
+				77A48FCD2D6D219A00940E70 /* Sources */,
+				77A48FCE2D6D219A00940E70 /* Frameworks */,
+				77A48FCF2D6D219A00940E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A48FD32D6D219A00940E70 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				77A48FD42D6D219A00940E70 /* mysignipasignerTests */,
+			);
+			name = mysignipasignerTests;
+			packageProductDependencies = (
+			);
+			productName = mysignipasignerTests;
+			productReference = 77A48FD12D6D219A00940E70 /* mysignipasignerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		77A48FDA2D6D219A00940E70 /* mysignipasignerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77A48FEB2D6D219A00940E70 /* Build configuration list for PBXNativeTarget "mysignipasignerUITests" */;
+			buildPhases = (
+				77A48FD72D6D219A00940E70 /* Sources */,
+				77A48FD82D6D219A00940E70 /* Frameworks */,
+				77A48FD92D6D219A00940E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77A48FDD2D6D219A00940E70 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				77A48FDE2D6D219A00940E70 /* mysignipasignerUITests */,
+			);
+			name = mysignipasignerUITests;
+			packageProductDependencies = (
+			);
+			productName = mysignipasignerUITests;
+			productReference = 77A48FDB2D6D219A00940E70 /* mysignipasignerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77A48FB82D6D219700940E70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					77A48FBF2D6D219700940E70 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					77A48FD02D6D219A00940E70 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 77A48FBF2D6D219700940E70;
+					};
+					77A48FDA2D6D219A00940E70 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 77A48FBF2D6D219700940E70;
+					};
+				};
+			};
+			buildConfigurationList = 77A48FBB2D6D219700940E70 /* Build configuration list for PBXProject "mysignipasigner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77A48FB72D6D219700940E70;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				77A2A1952DF8860E0054DA1E /* XCLocalSwiftPackageReference "../Packages/Welcome-Sheet" */,
+				77A2A1962DF886220054DA1E /* XCLocalSwiftPackageReference "../Packages/HapticEase-main" */,
+				77A2A1972DF8862E0054DA1E /* XCLocalSwiftPackageReference "../Packages/uikit-blur-view-main" */,
+				77BBED352DF886D500331B3B /* XCLocalSwiftPackageReference "../Packages/Nuke" */,
+				77BBED362DF8870700331B3B /* XCLocalSwiftPackageReference "../Packages/OpenSSL-Package" */,
+				77BBED382DF8872D00331B3B /* XCLocalSwiftPackageReference "../Packages/swifter" */,
+				77BBED392DF8873F00331B3B /* XCLocalSwiftPackageReference "../Packages/Zip" */,
+				77BBED3A2DF8875400331B3B /* XCLocalSwiftPackageReference "../Packages/ZIPFoundation" */,
+				77C0C40D2E1D93EF00E12E8E /* XCLocalSwiftPackageReference "../Packages/BezelKit-main" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 77A48FC12D6D219700940E70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77A48FBF2D6D219700940E70 /* mysignipasigner */,
+				77A48FD02D6D219A00940E70 /* mysignipasignerTests */,
+				77A48FDA2D6D219A00940E70 /* mysignipasignerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77A48FBE2D6D219700940E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BBF0A72DF8908100331B3B /* signervip.patch in Resources */,
+				77BBF0A82DF8908100331B3B /* LICENSE in Resources */,
+				77BBF0A92DF8908100331B3B /* xmake.lua in Resources */,
+				770B7D7E2E40FD5A00E0C453 /* Information.md in Resources */,
+				77BBF0AA2DF8908100331B3B /* INSTALL.sh in Resources */,
+				77BBF0AC2DF8908100331B3B /* Dockerfile in Resources */,
+				77BBF0AD2DF8908100331B3B /* CMakeLists.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A48FCF2D6D219A00940E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A48FD92D6D219A00940E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		77AB91D92D9DC83F003F0A91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Escape sandbox by creating a new process\n/usr/bin/env /bin/bash <<'SCRIPT'\ncd \"${SRCROOT}\"\nDATE=$(date '+%a %b %-d %-I:%M %p')\nexport GIT_TERMINAL_PROMPT=0\nCHANGELOG_FILE=\"changelog.txt\"\n\necho \"===== AUTO COMMIT SCRIPT START =====\"\necho \"Current directory: $(pwd)\"\n\n# Get list of changes\nADDED_FILES=$(/usr/bin/git status --porcelain | grep '^A' | cut -c4-)\nDELETED_FILES=$(/usr/bin/git status --porcelain | grep '^D' | cut -c4-)\nMODIFIED_FILES=$(/usr/bin/git status --porcelain | grep '^ M\\|^M' | cut -c4-)\n\n# Create or append to changelog\nif [[ -n \"$ADDED_FILES\" || -n \"$DELETED_FILES\" || -n \"$MODIFIED_FILES\" ]]; then\n    echo -e \"\\n=== Changes at $DATE ===\" >> \"$CHANGELOG_FILE\"\n    \n    if [[ -n \"$ADDED_FILES\" ]]; then\n        echo -e \"\\nAdded files:\" >> \"$CHANGELOG_FILE\"\n        echo \"$ADDED_FILES\" | while read -r file; do\n            echo \"[+] $file\" >> \"$CHANGELOG_FILE\"\n        done\n    fi\n    \n    if [[ -n \"$DELETED_FILES\" ]]; then\n        echo -e \"\\nDeleted files:\" >> \"$CHANGELOG_FILE\"\n        echo \"$DELETED_FILES\" | while read -r file; do\n            echo \"[-] $file\" >> \"$CHANGELOG_FILE\"\n        done\n    fi\n    \n    if [[ -n \"$MODIFIED_FILES\" ]]; then\n        echo -e \"\\nModified files:\" >> \"$CHANGELOG_FILE\"\n        echo \"$MODIFIED_FILES\" | while read -r file; do\n            echo \"[M] $file\" >> \"$CHANGELOG_FILE\"\n        done\n    fi\n    \n    # Add changelog to git if it was modified\n    /usr/bin/git add \"$CHANGELOG_FILE\"\nfi\n\n# Regular commit process\necho \"Adding files...\"\n/usr/bin/git add .\n\nif [[ -n \"$(/usr/bin/git status --porcelain)\" ]]; then\n    echo \"Changes detected, committing...\"\n    /usr/bin/git commit -m \"Automated commit at $DATE\"\n    echo \"Pushing to remote...\"\n    if /usr/bin/git push; then\n        echo \"✅ Successfully pushed to GitHub!\"\n    else\n        echo \"❌ Failed to push to GitHub\"\n        exit 1\n    fi\nelse\n    echo \"No changes to commit\"\nfi\necho \"===== AUTO COMMIT SCRIPT END =====\"\nSCRIPT\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77A48FBC2D6D219700940E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77DB9CEA2DF153B700973808 /* Entitlements.c in Sources */,
+				77DB9CEB2DF153B700973808 /* CodeDirectory.c in Sources */,
+				77DB9CEC2DF153B700973808 /* Other.swift in Sources */,
+				77DB9CEE2DF153B700973808 /* CSBlob.c in Sources */,
+				77DB9CEF2DF153B700973808 /* ZIP.swift in Sources */,
+				77DB9CF02DF153B700973808 /* DyldSharedCache.c in Sources */,
+				77DB9CF12DF153B700973808 /* Fat.c in Sources */,
+				77DB9CF22DF153B700973808 /* BufferedStream.c in Sources */,
+				77DB9CF32DF153B700973808 /* DER.c in Sources */,
+				77DB9CF42DF153B700973808 /* MachOLoadCommand.c in Sources */,
+				77DB9CF52DF153B700973808 /* Host.c in Sources */,
+				77DB9CF62DF153B700973808 /* MemoryStream.c in Sources */,
+				77DB9CF72DF153B700973808 /* arm64.c in Sources */,
+				77BBF0B92DF8932200331B3B /* zsign_wrapper.cpp in Sources */,
+				77DB9CF82DF153B700973808 /* PatchFinder_arm64.c in Sources */,
+				77DB9CFA2DF153B700973808 /* Base64.c in Sources */,
+				77DB9CFB2DF153B700973808 /* Util.c in Sources */,
+				77DB9CFC2DF153B700973808 /* MachO.c in Sources */,
+				77DB9CFD2DF153B700973808 /* FileStream.c in Sources */,
+				77BBF0AE2DF8908100331B3B /* common.cpp in Sources */,
+				77BBF0AF2DF8908100331B3B /* macho.cpp in Sources */,
+				77BBF0B02DF8908100331B3B /* archo.cpp in Sources */,
+				77BBF0B12DF8908100331B3B /* openssl.cpp in Sources */,
+				77BBF0B32DF8908100331B3B /* signing.cpp in Sources */,
+				77BBF0B42DF8908100331B3B /* json.cpp in Sources */,
+				77BBF0B52DF8908100331B3B /* base64.cpp in Sources */,
+				77BBF0B62DF8908100331B3B /* bundle.cpp in Sources */,
+				77DB9CFE2DF153B700973808 /* Circlefy.m in Sources */,
+				77DB9CFF2DF153B700973808 /* PatchFinder.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A48FCD2D6D219A00940E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A48FD72D6D219A00940E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77A48FD32D6D219A00940E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A48FBF2D6D219700940E70 /* mysignipasigner */;
+			targetProxy = 77A48FD22D6D219A00940E70 /* PBXContainerItemProxy */;
+		};
+		77A48FDD2D6D219A00940E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A48FBF2D6D219700940E70 /* mysignipasigner */;
+			targetProxy = 77A48FDC2D6D219A00940E70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		77A48FE32D6D219A00940E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading\"";
+				INFOPLIST_FILE = "mysignipasigner/Info.plist\n";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-v";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77A48FE42D6D219A00940E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				"HEADER_SEARCH_PATHS[arch=*]" = "\"$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading\"";
+				INFOPLIST_FILE = "mysignipasigner/Info.plist\n";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-v";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77A48FE62D6D219A00940E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = AppleIntelligence;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_SKIP_APP_STORE_DEPLOYMENT = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = mysignipasigner/mysignipasigner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"mysignipasigner/Preview Content\"";
+				DEVELOPMENT_TEAM = NCFUM5LJ4Z;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading\"",
+					"$(PROJECT_DIR)/Substrates",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = mysignipasigner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = " ";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = gliddd4.mysignipasigner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading/ZSign.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		77A48FE72D6D219A00940E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = AppleIntelligence;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSETCATALOG_COMPILER_SKIP_APP_STORE_DEPLOYMENT = YES;
+				CODE_SIGN_ALLOW_ENTITLEMENTS_MODIFICATION = YES;
+				CODE_SIGN_ENTITLEMENTS = mysignipasigner/mysignipasigner.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"mysignipasigner/Preview Content\"";
+				DEVELOPMENT_TEAM = NCFUM5LJ4Z;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading\"",
+					"$(PROJECT_DIR)/Substrates",
+				);
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = mysignipasigner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = " ";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"\"$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = gliddd4.mysignipasigner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/mysignipasigner/Tabs/Sign/Sideloading/ZSign.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		77A48FE92D6D219A00940E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gliddd4.mysignipasignerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mysignipasigner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mysignipasigner";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		77A48FEA2D6D219A00940E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gliddd4.mysignipasignerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mysignipasigner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mysignipasigner";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		77A48FEC2D6D219A00940E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gliddd4.mysignipasignerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = mysignipasigner;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		77A48FED2D6D219A00940E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = gliddd4.mysignipasignerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_TARGET_NAME = mysignipasigner;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77A48FBB2D6D219700940E70 /* Build configuration list for PBXProject "mysignipasigner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A48FE32D6D219A00940E70 /* Debug */,
+				77A48FE42D6D219A00940E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A48FE52D6D219A00940E70 /* Build configuration list for PBXNativeTarget "mysignipasigner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A48FE62D6D219A00940E70 /* Debug */,
+				77A48FE72D6D219A00940E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A48FE82D6D219A00940E70 /* Build configuration list for PBXNativeTarget "mysignipasignerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A48FE92D6D219A00940E70 /* Debug */,
+				77A48FEA2D6D219A00940E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77A48FEB2D6D219A00940E70 /* Build configuration list for PBXNativeTarget "mysignipasignerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A48FEC2D6D219A00940E70 /* Debug */,
+				77A48FED2D6D219A00940E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		77A2A1952DF8860E0054DA1E /* XCLocalSwiftPackageReference "../Packages/Welcome-Sheet" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Packages/Welcome-Sheet";
+		};
+		77A2A1962DF886220054DA1E /* XCLocalSwiftPackageReference "../Packages/HapticEase-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Packages/HapticEase-main";
+		};
+		77A2A1972DF8862E0054DA1E /* XCLocalSwiftPackageReference "../Packages/uikit-blur-view-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Packages/uikit-blur-view-main";
+		};
+		77BBED352DF886D500331B3B /* XCLocalSwiftPackageReference "../Packages/Nuke" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/Nuke;
+		};
+		77BBED362DF8870700331B3B /* XCLocalSwiftPackageReference "../Packages/OpenSSL-Package" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Packages/OpenSSL-Package";
+		};
+		77BBED382DF8872D00331B3B /* XCLocalSwiftPackageReference "../Packages/swifter" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/swifter;
+		};
+		77BBED392DF8873F00331B3B /* XCLocalSwiftPackageReference "../Packages/Zip" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/Zip;
+		};
+		77BBED3A2DF8875400331B3B /* XCLocalSwiftPackageReference "../Packages/ZIPFoundation" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Packages/ZIPFoundation;
+		};
+		77C0C40D2E1D93EF00E12E8E /* XCLocalSwiftPackageReference "../Packages/BezelKit-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../Packages/BezelKit-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7779ADED2D9B89DB00A16C99 /* BlurView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlurView;
+		};
+		77BBED3C2DF8878700331B3B /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77BBED352DF886D500331B3B /* XCLocalSwiftPackageReference "../Packages/Nuke" */;
+			productName = Nuke;
+		};
+		77BBED3E2DF8879000331B3B /* WelcomeSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77A2A1952DF8860E0054DA1E /* XCLocalSwiftPackageReference "../Packages/Welcome-Sheet" */;
+			productName = WelcomeSheet;
+		};
+		77BBED402DF8879500331B3B /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77BBED362DF8870700331B3B /* XCLocalSwiftPackageReference "../Packages/OpenSSL-Package" */;
+			productName = OpenSSL;
+		};
+		77BBED442DF8879D00331B3B /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77BBED382DF8872D00331B3B /* XCLocalSwiftPackageReference "../Packages/swifter" */;
+			productName = Swifter;
+		};
+		77BBED462DF887A200331B3B /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77BBED392DF8873F00331B3B /* XCLocalSwiftPackageReference "../Packages/Zip" */;
+			productName = Zip;
+		};
+		77BBED482DF887A400331B3B /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77BBED3A2DF8875400331B3B /* XCLocalSwiftPackageReference "../Packages/ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		77BCAD682D9894A00011B808 /* HapticEase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HapticEase;
+		};
+		77C0C40E2E1D93EF00E12E8E /* BezelKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BezelKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 77A48FB82D6D219700940E70 /* Project object */;
+}

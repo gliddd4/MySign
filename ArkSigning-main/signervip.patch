@@ -1,0 +1,341 @@
+--- arksigning.cpp
++++ signervip.cpp
+@@ -12,6 +12,11 @@
+ #include <queue>
+ #include <atomic>
+ #include <condition_variable>
++#include <filesystem>
++std::string GetFileName(const std::string& fullPath) {
++    return std::filesystem::path(fullPath).filename().string();
++}
++
+ 
+ // Forward declaration - this function is defined in bundle.cpp
+ bool FindAppFolder(const string &strFolder, string &strAppFolder);
+@@ -41,18 +46,25 @@
+     {"inputfolder", required_argument, NULL, 1000},
+     {"outputfolder", required_argument, NULL, 1001},
+     {"parallel", optional_argument, NULL, 1002},
++    {"base-url", required_argument, NULL, 1003},
+     {}};
+ 
+ int usage() {
+-  ZLog::Print("Usage: arksigning [-options] [-k privkey.pem] [-m dev.prov] [-o "
+-              "output.ipa] file|folder\n");
++  ZLog::Print("=============================================\n");
++  ZLog::Print("          \033[32mwww.signer.vip\033[0m\n"); // green
++  ZLog::Print("     \033[33mSignerVIP - IPA Signing Tool\033[0m\n"); // yellow
++  ZLog::Print("       \033[31mAdmin: Zefie (admin@signer.vip)\033[0m\n"); // red
++  ZLog::Print("    \033[38;5;208mDiscord: https://discord.gg/jkDJnj7c\033[0m\n"); // orange (ANSI 208)
++  ZLog::Print("     \033[38;5;94mCredits: NabzClan | zhlynn\033[0m\n"); // bright brown (ANSI 94)
++  ZLog::Print("=============================================\n");
++
++ ZLog::Print("Usage: \033[32msignervip\033[0m [-options] [-k cert.p12] [-m profile.mobileprovision] [-o output.ipa] file|folder\n");
+   ZLog::Print("options:\n");
+   ZLog::Print(
+       "-k, --pkey\t\tPath to private key or p12 file. (PEM or DER format)\n");
+   ZLog::Print("-m, --prov\t\tPath to mobile provisioning profile.\n");
+   ZLog::Print("-c, --cert\t\tPath to certificate file. (PEM or DER format)\n");
+-  ZLog::Print(
+-      "-d, --debug\t\tGenerate debug output files. (.arksigning_debug folder)\n");
++ZLog::Print("-d, --debug\t\tGenerate debug output files. (.\033[32msignervip\033[0m_debug folder)\n");
+   ZLog::Print("-f, --force\t\tForce sign without cache when signing folder.\n");
+   ZLog::Print("-o, --output\t\tPath to output ipa file.\n");
+   ZLog::Print("-p, --password\t\tPassword for private key or p12 file.\n");
+@@ -78,7 +90,7 @@
+   ZLog::Print("--inputfolder\t\tFolder containing unsigned apps to process.\n");
+   ZLog::Print("--outputfolder\t\tDestination folder for signed apps.\n");
+   ZLog::Print("--parallel\t\tEnable parallel processing with optional thread count.\n");
+-
++  ZLog::Print("--base-url\t\tBase URL used to generate OTA link (e.g., https://signer.vip/signed/)\n");
+   return -1;
+ }
+ 
+@@ -358,6 +370,7 @@
+   string strPath;
+   string strInputFolder;
+   string strOutputFolder;
++  string strBaseUrl = "https://yourdomain.com/signed/";
+   int nParallelThreads = 0;
+ 
+   vector<string> arrDyLibFiles;
+@@ -367,119 +380,74 @@
+   while (-1 != (opt = getopt_long(argc, argv, "dfvhBc:k:m:o:ip:e:b:n:z:ql:wE",
+                                   options, &argslot))) {
+     switch (opt) {
+-    case 'd':
+-      ZLog::SetLogLever(ZLog::E_DEBUG);
+-      break;
+-    case 'f':
+-      bForce = true;
+-      break;
+-    case 'c':
+-      strCertFile = optarg;
+-      break;
+-    case 'k':
+-      strPKeyFile = optarg;
+-      break;
+-    case 'm':
+-      strProvFile = optarg;
+-      break;
+-    case 'p':
+-      strPassword = optarg;
+-      break;
+-    case 'b':
+-      strBundleId = optarg;
+-      break;
+-    case 'r':
+-      strBundleVersion = optarg;
+-      break;
+-    case 'n':
+-      strDisplayName = optarg;
+-      break;
+-    case 'e':
+-      strEntitlementsFile = optarg;
+-      break;
+-    case 'l':
+-      arrDyLibFiles.push_back(optarg);
+-      break;
+-    case 'i':
+-      bInstall = true;
+-      break;
+-    case 'o':
+-      strOutputFile = GetCanonicalizePath(optarg);
+-      break;
+-    case 'z':
+-      uZipLevel = atoi(optarg);
+-      break;
+-    case 'w':
+-      bWeakInject = true;
+-      break;
+-    case 'E':
+-      bDontEmbedProfile = true;
+-      break;
+-    case 'q':
+-      ZLog::SetLogLever(ZLog::E_NONE);
+-      break;
+-    case 'v':
+-      printf("version: 0.6\n");
+-      return 0;
+-    case 'B':
+-      bBulkMode = true;
+-      break;
+-    case 1000: // inputfolder
+-      strInputFolder = GetCanonicalizePath(optarg);
+-      break;
+-    case 1001: // outputfolder
+-      strOutputFolder = GetCanonicalizePath(optarg);
+-      break;
+-    case 1002: // parallel
+-      if (optarg) {
+-        nParallelThreads = atoi(optarg);
+-      } else {
+-        nParallelThreads = -1; // Auto-detect
++      case 'd': ZLog::SetLogLever(ZLog::E_DEBUG); break;
++      case 'f': bForce = true; break;
++      case 'c': strCertFile = optarg; break;
++      case 'k': strPKeyFile = optarg; break;
++      case 'm': strProvFile = optarg; break;
++      case 'p': strPassword = optarg; break;
++      case 'b': strBundleId = optarg; break;
++      case 'r': strBundleVersion = optarg; break;
++      case 'n': strDisplayName = optarg; break;
++      case 'e': strEntitlementsFile = optarg; break;
++      case 'l': arrDyLibFiles.push_back(optarg); break;
++      case 'i': bInstall = true; break;
++      case 'o': strOutputFile = GetCanonicalizePath(optarg); break;
++      case 'z': uZipLevel = atoi(optarg); break;
++      case 'w': bWeakInject = true; break;
++      case 'E': bDontEmbedProfile = true; break;
++      case 'q': ZLog::SetLogLever(ZLog::E_NONE); break;
++      case 'v': printf("version: 0.6\n"); return 0;
++      case 'B': bBulkMode = true; break;
++      case 1000: strInputFolder = GetCanonicalizePath(optarg); break;
++      case 1001: strOutputFolder = GetCanonicalizePath(optarg); break;
++      case 1002:
++        if (optarg) nParallelThreads = atoi(optarg);
++        else nParallelThreads = -1;
++        break;
++      case 1003: // --base-url
++        strBaseUrl = optarg;
++        if (!strBaseUrl.empty() && strBaseUrl.back() != '/') strBaseUrl += '/';
++        break;
++      case 'h':
++      case '?': return usage();
++      case 'I': {
++        strPath = GetCanonicalizePath(argv[optind]);
++        if (!IsFolder(strPath.c_str()) && !IsZipFile(strPath.c_str())) {
++          ZLog::ErrorV(">>> Invalid input file! Please provide an IPA file or app folder.\n");
++          return -1;
++        }
++
++        string strFolder = strPath;
++        ZTimer timer;
++        if (IsZipFile(strPath.c_str())) {
++          StringFormat(strFolder, "/tmp/arksigning_info_%llu", timer.Reset());
++          ZLog::PrintV(">>> Unzip:\t%s -> %s ... \n", strPath.c_str(), strFolder.c_str());
++          RemoveFolder(strFolder.c_str());
++          if (!SystemExec("unzip -qq -d '%s' '%s'", strFolder.c_str(), strPath.c_str())) {
++            RemoveFolder(strFolder.c_str());
++            ZLog::ErrorV(">>> Unzip Failed!\n");
++            return -1;
++          }
++        }
++
++        ZAppBundle bundle;
++        bundle.m_strAppFolder = strFolder;
++        JValue jvInfo;
++        if (bundle.GetAppInfoJson(jvInfo)) {
++          if (jvInfo.has("icon_base64")) ZLog::PrintV(">>> App icon found\n");
++          else ZLog::PrintV(">>> No app icon found\n");
++
++          string strJson;
++          jvInfo.styleWrite(strJson);
++          printf("%s\n", strJson.c_str());
++        }
++
++        if (0 == strFolder.find("/tmp/arksigning_info_")) {
++          RemoveFolder(strFolder.c_str());
++        }
++        return 0;
+       }
+-      break;
+-    case 'h':
+-    case '?':
+-      return usage();
+-    case 'I': {
+-      strPath = GetCanonicalizePath(argv[optind]);
+-      if (!IsFolder(strPath.c_str()) && !IsZipFile(strPath.c_str())) {
+-        ZLog::ErrorV(">>> Invalid input file! Please provide an IPA file or app folder.\n");
+-        return -1;
+-      }
+-      
+-      string strFolder = strPath;
+-      ZTimer timer;
+-      if (IsZipFile(strPath.c_str())) {
+-        StringFormat(strFolder, "/tmp/arksigning_info_%llu", timer.Reset());
+-        ZLog::PrintV(">>> Unzip:\t%s -> %s ... \n", strPath.c_str(), strFolder.c_str());
+-        RemoveFolder(strFolder.c_str());
+-        if (!SystemExec("unzip -qq -d '%s' '%s'", strFolder.c_str(), strPath.c_str())) {
+-          RemoveFolder(strFolder.c_str());
+-          ZLog::ErrorV(">>> Unzip Failed!\n");
+-          return -1;
+-        }
+-      }
+-      
+-      ZAppBundle bundle;
+-      bundle.m_strAppFolder = strFolder;
+-      JValue jvInfo;
+-      if (bundle.GetAppInfoJson(jvInfo)) {
+-        if (jvInfo.has("icon_base64")) {
+-          ZLog::PrintV(">>> App icon found\n");
+-        } else {
+-          ZLog::PrintV(">>> No app icon found\n");
+-        }
+-        
+-        string strJson;
+-        jvInfo.styleWrite(strJson);
+-        printf("%s\n", strJson.c_str());
+-      }
+-      
+-      if (0 == strFolder.find("/tmp/arksigning_info_")) {
+-        RemoveFolder(strFolder.c_str());
+-      }
+-      return 0;
+-    }
+     }
+     ZLog::DebugV(">>> Option:\t-%c, %s\n", opt, optarg);
+   }
+@@ -489,30 +457,26 @@
+       ZLog::ErrorV(">>> Bulk mode requires both --inputfolder and --outputfolder parameters\n");
+       return usage();
+     }
+-    
++
+     if (!IsFolder(strInputFolder.c_str())) {
+-      ZLog::ErrorV(">>> Input folder does not exist or is not a directory: %s\n", strInputFolder.c_str());
++      ZLog::ErrorV(">>> Input folder does not exist: %s\n", strInputFolder.c_str());
+       return -1;
+     }
+-    
++
+     arksigningAsset arksigningAsset;
+     if (!arksigningAsset.Init(strCertFile, strPKeyFile, strProvFile,
+-                         strEntitlementsFile, strPassword)) {
+-      return -1;
+-    }
+-    
++                               strEntitlementsFile, strPassword)) return -1;
++
+     bool bSuccess = bulkSign(strInputFolder, strOutputFolder, &arksigningAsset,
+-                           bForce, bWeakInject, bDontEmbedProfile, arrDyLibFiles,
+-                           strBundleId, strDisplayName, strBundleVersion,
+-                           uZipLevel, nParallelThreads);
+-    
++                             bForce, bWeakInject, bDontEmbedProfile, arrDyLibFiles,
++                             strBundleId, strDisplayName, strBundleVersion,
++                             uZipLevel, nParallelThreads);
++
+     gtimer.Print(">>> Bulk signing completed.");
+     return bSuccess ? 0 : -1;
+   }
+-  
+-  if (optind >= argc) {
+-    return usage();
+-  }
++
++  if (optind >= argc) return usage();
+ 
+   strPath = GetCanonicalizePath(argv[optind]);
+   if (!IsFileExists(strPath.c_str())) {
+@@ -530,10 +494,10 @@
+   bool bZipFile = false;
+   if (!IsFolder(strPath.c_str())) {
+     bZipFile = IsZipFile(strPath.c_str());
+-    if (!bZipFile) { // macho file
++    if (!bZipFile) {
+       ZMachO macho;
+       if (macho.Init(strPath.c_str())) {
+-        if (!arrDyLibFiles.empty()) { // inject dylib
++        if (!arrDyLibFiles.empty()) {
+           bool bCreate = false;
+           for (string dyLibFile : arrDyLibFiles)
+             macho.InjectDyLib(bWeakInject, dyLibFile.c_str(), bCreate);
+@@ -549,9 +513,7 @@
+   ZTimer timer;
+   arksigningAsset arksigningAsset;
+   if (!arksigningAsset.Init(strCertFile, strPKeyFile, strProvFile,
+-                       strEntitlementsFile, strPassword)) {
+-    return -1;
+-  }
++                             strEntitlementsFile, strPassword)) return -1;
+ 
+   bool bEnableCache = true;
+   string strFolder = strPath;
+@@ -562,8 +524,7 @@
+     ZLog::PrintV(">>> Unzip:\t%s (%s) -> %s ... \n", strPath.c_str(),
+                  GetFileSizeString(strPath.c_str()).c_str(), strFolder.c_str());
+     RemoveFolder(strFolder.c_str());
+-    if (!SystemExec("unzip -qq -d '%s' '%s'", strFolder.c_str(),
+-                    strPath.c_str())) {
++    if (!SystemExec("unzip -qq -d '%s' '%s'", strFolder.c_str(), strPath.c_str())) {
+       RemoveFolder(strFolder.c_str());
+       ZLog::ErrorV(">>> Unzip Failed!\n");
+       return -1;
+@@ -609,6 +570,11 @@
+     }
+     timer.PrintResult(true, ">>> Archive OK! (%s)",
+                       GetFileSizeString(strOutputFile.c_str()).c_str());
++
++    // ✅ OTA PLIST LINK OUTPUT
++    std::string plistFileName = std::filesystem::path(strOutputFile).filename().string() + ".plist";
++    std::string otaUrl = "itms-services://?action=download-manifest&url=" + strBaseUrl + plistFileName;
++    ZLog::PrintV("📱 OTA Link: %s\n", otaUrl.c_str());
+   }
+ 
+   if (bRet && bInstall) {
+@@ -626,3 +592,4 @@
+   gtimer.Print(">>> Done.");
+   return bRet ? 0 : -1;
+ }
++

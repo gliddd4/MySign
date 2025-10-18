@@ -1,0 +1,120 @@
+COMPILATION ISSUES CATEGORIZED BY FILE
+
+=== C/C++ FILES ===
+
+== ArkSigning-main/common/base64.cpp ==
+Line 123:42 - Implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'
+
+== ArkSigning-main/archo.cpp ==
+Line 98:80 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 641:39 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 642:29 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 643:44 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 644:31 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 716:30 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+
+== ArkSigning-main/bundle.cpp ==
+Line 86:68 - Implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'
+
+== ArkSigning-main/macho.cpp ==
+Line 232:48 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+
+== ArkSigning-main/openssl.cpp ==
+Line 129:6 - Unused variable 'code'
+Line 235:3 - 'sprintf' is deprecated: This function is provided for compatibility reasons only. Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.
+Line 376:64 - Implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'int'
+Line 559:7 - 'sprintf' is deprecated: This function is provided for compatibility reasons only. Due to security concerns inherent in the design of sprintf(3), it is highly recommended that you use snprintf(3) instead.
+
+== ArkSigning-main/signing.cpp ==
+Line 576:48 - Implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+Line 577:44 - Implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+Line 578:56 - Implicit conversion loses integer precision: 'size_type' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/choma/BufferedStream.c ==
+Line 29:12 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'
+Line 54:12 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'
+
+== Circlefy/choma/CodeDirectory.c ==
+Line 39:90 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+Line 219:61 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+Line 234:68 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+Line 269:69 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+Line 284:61 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+Line 437:63 - Implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'
+Line 459:51 - Implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'
+Line 467:90 - Implicit conversion loses integer precision: 'int64_t' (aka 'long long') to 'int'
+Line 536:78 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'CC_LONG' (aka 'unsigned int')
+Line 539:78 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'CC_LONG' (aka 'unsigned int')
+Line 542:75 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'CC_LONG' (aka 'unsigned int')
+Line 557:115 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'
+Line 558:50 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'
+Line 622:49 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'
+
+== Circlefy/choma/CSBlob.c ==
+Line 308:28 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+Line 313:44 - Implicit conversion loses integer precision: 'long' to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/choma/DER.c ==
+Line 141:19 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/choma/Entitlements.c ==
+Line 111:87 - Implicit conversion loses integer precision: 'unsigned long' to 'uint32_t' (aka 'unsigned int')
+Line 364:23 - Implicit conversion loses integer precision: 'CFIndex' (aka 'long') to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/choma/FileStream.c ==
+Line 15:12 - Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'
+Line 45:12 - Implicit conversion loses integer precision: 'ssize_t' (aka 'long') to 'int'
+Line 83:62 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/choma/MachOLoadCommand.c ==
+Line 143:39 - Implicit conversion loses integer precision: 'const uint64_t' (aka 'const unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 178:40 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'
+
+== Circlefy/choma/MemoryStream.c ==
+Line 182:39 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/choma/PatchFinder_arm64.c ==
+Line 22:57 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 29:58 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 33:57 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 39:57 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 42:57 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+Line 45:45 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'uint32_t' (aka 'unsigned int')
+
+== Circlefy/Circlefy.m ==
+Line 35:57 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'
+Line 35:71 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'
+Line 40:39 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'
+Line 40:87 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'
+Line 54:83 - Implicit conversion loses integer precision: 'size_t' (aka 'unsigned long') to 'int'
+Line 54:89 - Implicit conversion loses integer precision: 'uint64_t' (aka 'unsigned long long') to 'int'
+
+=== SWIFT FILES ===
+
+== mysignipasigner/Managers/AudioManager.swift ==
+Line 56:37 - Variable 'self' was written to, but never read
+Line 57:17 - Immutable value 'i' was never used; consider replacing with '_' or removing it
+Line 80:37 - Variable 'self' was written to, but never read
+Line 81:17 - Immutable value 'i' was never used; consider replacing with '_' or removing it
+
+== mysignipasigner/Tabs/Browse/RepositoryCode/IconManager/IconManager.swift ==
+Line 527:46 - Call to main actor-isolated instance method 'enhanceColorForTinting' in a synchronous nonisolated context; this is an error in the Swift 6 language mode
+Line 538:42 - Call to main actor-isolated instance method 'enhanceColorForTinting' in a synchronous nonisolated context; this is an error in the Swift 6 language mode
+
+== mysignipasigner/Tabs/Browse/RepositoryCode/RepositoryListView.swift ==
+Line 508:9 - Will never be executed
+
+== mysignipasigner/Tabs/Browse/Toolbar/Repository Adder/URLInputView.swift ==
+Line 224:40 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+Line 231:40 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+Line 255:44 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+Line 265:44 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+Line 271:52 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+Line 287:52 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+Line 311:44 - Trailing closure in this context is confusable with the body of the statement; pass as a parenthesized argument to silence this warning
+
+== mysignipasigner/Tabs/Files/SearchPopover.swift ==
+Line 157:21 - No 'async' operations occur within 'await' expression
+
+== mysignipasigner/Tabs/Sign/SignView.swift ==
+Line 194:17 - Initialization of immutable value 'success' was never used; consider replacing with assignment to '_' or removing it
