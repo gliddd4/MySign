@@ -1014,44 +1014,89 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		77A2A1952DF8860E0054DA1E /* XCLocalSwiftPackageReference "../Packages/Welcome-Sheet" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Packages/Welcome-Sheet";
+/* Begin XCRemoteSwiftPackageReference section */
+		77A2A1952DF8860E0054DA1E /* XCRemoteSwiftPackageReference "Welcome-Sheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MAJKFL/Welcome-Sheet.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77A2A1962DF886220054DA1E /* XCLocalSwiftPackageReference "../Packages/HapticEase-main" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Packages/HapticEase-main";
+		77A2A1962DF886220054DA1E /* XCRemoteSwiftPackageReference "HapticEase" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emreeilhan/HapticEase.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77A2A1972DF8862E0054DA1E /* XCLocalSwiftPackageReference "../Packages/uikit-blur-view-main" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Packages/uikit-blur-view-main";
+		77A2A1972DF8862E0054DA1E /* XCRemoteSwiftPackageReference "uikit-blur-view" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/juliensagot/uikit-blur-view.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77BBED352DF886D500331B3B /* XCLocalSwiftPackageReference "../Packages/Nuke" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/Nuke;
+		77BBED352DF886D500331B3B /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77BBED362DF8870700331B3B /* XCLocalSwiftPackageReference "../Packages/OpenSSL-Package" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Packages/OpenSSL-Package";
+		77BBED362DF8870700331B3B /* XCRemoteSwiftPackageReference "OpenSSL-Package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL-Package.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77BBED382DF8872D00331B3B /* XCLocalSwiftPackageReference "../Packages/swifter" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/swifter;
+		77BBED382DF8872D00331B3B /* XCRemoteSwiftPackageReference "Swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77BBED392DF8873F00331B3B /* XCLocalSwiftPackageReference "../Packages/Zip" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/Zip;
+		77BBED392DF8873F00331B3B /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77BBED3A2DF8875400331B3B /* XCLocalSwiftPackageReference "../Packages/ZIPFoundation" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Packages/ZIPFoundation;
+		77BBED3A2DF8875400331B3B /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-		77C0C40D2E1D93EF00E12E8E /* XCLocalSwiftPackageReference "../Packages/BezelKit-main" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../Packages/BezelKit-main";
+
+        77C0C40D2E1D93EF00E12E8E /* XCRemoteSwiftPackageReference "BezelKit" */ = {
+	        isa = XCRemoteSwiftPackageReference;
+	        repositoryURL = "https://github.com/markbattistella/BezelKit.git";
+	        requirement = {
+		        branch = main;
+		        kind = branch;
+	        };
+};
+		77C0C40D2E1D93EF00E12E8E /* XCRemoteSwiftPackageReference "BezelKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gliddd4/BezelKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		7779ADED2D9B89DB00A16C99 /* BlurView */ = {
