@@ -1,0 +1,18 @@
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo xcode-select -s /Applications/Xcode.app
+      - run: chmod +x ./ipabuild.sh
+      - run: ./ipabuild.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ipa-build
+          path: '**/*.ipa'
