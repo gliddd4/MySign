@@ -5,4 +5,5 @@ Based primarily on https://github.com/nabzclan-reborn/ArkSigning. Thanks to Feat
 To build a ipa, run ./ipabuild.sh in the MySign folder.
 
 Screenshots:
+https://raw.githubusercontent.com/gliddd4/MySign/refs/heads/main/IMG_0690.png
 
