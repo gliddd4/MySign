@@ -1073,6 +1073,15 @@
 			};
 		};
 
+        77BBED382DF8872D00331B3B /* XCRemoteSwiftPackageReference "Swifter" */ = {
+	        isa = XCRemoteSwiftPackageReference;
+	        repositoryURL = "https://github.com/httpswift/swifter.git";
+	        requirement = {
+		        kind = revision;
+		        revision = "1.5.0";
+	        };
+        };
+
         77C0C40D2E1D93EF00E12E8E /* XCRemoteSwiftPackageReference "BezelKit" */ = {
 	        isa = XCRemoteSwiftPackageReference;
 	        repositoryURL = "https://github.com/markbattistella/BezelKit.git";
@@ -1080,7 +1089,8 @@
 		        branch = main;
 		        kind = branch;
 	        };
-};
+        };
+
 		77C0C40D2E1D93EF00E12E8E /* XCRemoteSwiftPackageReference "BezelKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/markbattistella/BezelKit.git";
