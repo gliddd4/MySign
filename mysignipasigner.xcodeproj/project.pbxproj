@@ -1055,14 +1055,7 @@
 				kind = branch;
 			};
 		};
-		77BBED382DF8872D00331B3B /* XCRemoteSwiftPackageReference "Swifter" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/httpswift/swifter.git";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
+		
 		77BBED392DF8873F00331B3B /* XCRemoteSwiftPackageReference "Zip" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/marmelroy/Zip.git";
