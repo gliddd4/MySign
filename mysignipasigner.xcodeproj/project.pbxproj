@@ -1090,7 +1090,7 @@
 };
 		77C0C40D2E1D93EF00E12E8E /* XCRemoteSwiftPackageReference "BezelKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/gliddd4/BezelKit.git";
+			repositoryURL = "https://github.com/markbattistella/BezelKit.git";
 			requirement = {
 				branch = main;
 				kind = branch;
