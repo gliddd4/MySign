@@ -1,4 +1,4 @@
-The coolest ipa signer on the planet, now open source. On par with Feather and Ksign. Developed and tested on iOS 17, expect compatibility issues on iOS 18 & 26. For anyone wondering, the UI was designed before iOS 26 released.
+The coolest ipa signer on the planet, now open source. On par with Scarlet and Ksign. Developed and tested on iOS 17, expect compatibility issues on iOS 18 & 26. 
 
 Based primarily on https://github.com/nabzclan-reborn/ArkSigning. Thanks to Feather for eSign repo code compatibility. Other projects used are referenced in app (Will add here, WIP)
 
