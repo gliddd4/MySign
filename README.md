@@ -2,6 +2,9 @@
 
 The coolest ipa signer on the planet, for iOS 15 to 26. 
 
+## Installation
+Download the ipa from [releases](https://github.com/gliddd4/MySign/releases) and upload it to [a web signer](https://sign.ipasign.cc/) along with your certificate. If the app crashes use the linked web signer.
+
 ## Credits
 
 - [ArkSigning](https://github.com/nabzclan-reborn/ArkSigning): Improved zsign fork for on device signing and ipa modification
