@@ -1,7 +1,32 @@
 on:
   push:
     branches: [ main ]
+    paths:
+      - '**/*.swift'
+      - '**/*.m'
+      - '**/*.mm'
+      - '**/*.h'
+      - '**/*.pbxproj'
+      - '**/*.xcworkspace'
+      - '**/*.xcconfig'
+      - '**/*.entitlements'
+      - '**/*.plist'
+      - '**/*.xcodeproj/**'
+      - '**/*.xcassets/**'
+
   pull_request:
+    paths:
+      - '**/*.swift'
+      - '**/*.m'
+      - '**/*.mm'
+      - '**/*.h'
+      - '**/*.pbxproj'
+      - '**/*.xcworkspace'
+      - '**/*.xcconfig'
+      - '**/*.entitlements'
+      - '**/*.plist'
+      - '**/*.xcodeproj/**'
+      - '**/*.xcassets/**'
 
 jobs:
   build:
