@@ -1,3 +1,5 @@
+updating for liquid glass and finishing ui merge
+
 # MySign
 
 The coolest ipa signer on the planet, for iOS 15 to 26. 
